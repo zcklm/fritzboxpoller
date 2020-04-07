@@ -137,7 +137,7 @@ if [ "$getUploadDownloadTotal" = true ]; then
     [[ "$verbose" = 1 ]] && cat $LOCK_FILE
 	#For Cacti
 	UploadTotal=$(cat ${LOCK_FILE} | sed -n 's/^.*<\(NewTotalBytesSent\)>\([^<]*\)<\/.*$/\2/p')
-	DownloadTotal=$(cat ${LOCK_FILE} | sed -n 's/^.*<\(NewTotalBytesSent\)>\([^<]*\)<\/.*$/\2/p')
+	DownloadTotal=$(cat ${LOCK_FILE} | sed -n 's/^.*<\(NewTotalBytesReceived\)>\([^<]*\)<\/.*$/\2/p')
 
 fi
 
