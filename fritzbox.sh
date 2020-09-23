@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FritzBoxAddr="192.168.0.1"
+FritzBoxAddr="192.168.87.1"
 UpnpPort="49000"
 
 getExternalIP=true
